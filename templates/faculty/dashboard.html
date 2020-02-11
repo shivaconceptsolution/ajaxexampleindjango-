@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<a href="logout">Logout</a>	
+<a href="searchstudent">Search Student</a>	
+<h1>Welcome in Faculty Dashboard</h1>
+<hr>
+<hr>
+{%  for data in res   %}
+
+<tr><td>{{data.id}}</td><td>{{data.feedby}}</td> <td>{{data.feedto}}</td><td>{{data.feeddesc}}</td><td>{{data.feedbackrate}}</td></tr>
+
+
+</table>
+{% endfor  %}
+</body>
+</html>
